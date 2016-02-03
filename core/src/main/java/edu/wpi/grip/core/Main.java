@@ -8,7 +8,6 @@ import edu.wpi.grip.core.events.ExceptionClearedEvent;
 import edu.wpi.grip.core.events.ExceptionEvent;
 import edu.wpi.grip.core.operations.Operations;
 import edu.wpi.grip.core.serialization.Project;
-import edu.wpi.grip.generated.CVOperations;
 
 import javax.inject.Inject;
 import java.io.File;
@@ -45,7 +44,6 @@ public class Main {
         }
 
         Operations.addOperations(eventBus);
-        CVOperations.addOperations(eventBus);
 
         final String projectPath = args[0];
 
